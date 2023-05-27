@@ -4,17 +4,13 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use {
+        "loctvl842/monokai-pro.nvim",
+    }
+
+    use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('theprimeagen/harpoon')
@@ -39,16 +35,6 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },                  -- Required
         }
     }
-    --    use {
-    --        'nvim-tree/nvim-tree.lua',
-    --        requires = {
-    --            'nvim-tree/nvim-web-devicons', -- optional
-    --        },
-    --        config = function()
-    --            require("nvim-tree").setup {}
-    --        end
-    --    }
-    -- use('nvim-tree/nvim-web-devicons')
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
@@ -59,9 +45,42 @@ return require('packer').startup(function(use)
         }
     }
     use('lewis6991/gitsigns.nvim')
-    use('airblade/vim-gitgutter')
 
     use { "akinsho/toggleterm.nvim", tag = '*' }
 
     use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
+
+    use({
+        "glepnir/lspsaga.nvim",
+        opt = true,
+        branch = "main",
+        event = "LspAttach",
+        config = function()
+            require("lspsaga").setup({})
+        end,
+        requires = {
+            { "nvim-tree/nvim-web-devicons" },
+            --Please make sure you install markdown and markdown_inline parser
+            { "nvim-treesitter/nvim-treesitter" }
+        }
+    })
+
+    --     use {
+    --         "folke/which-key.nvim",
+    --         config = function()
+    --             vim.o.timeout = true
+    --             vim.o.timeoutlen = 300
+    --             require("which-key").setup {
+    --                 -- your configuration comes here
+    --                 -- or leave it empty to use the default settings
+    --                 -- refer to the configuration section below
+    --             }
+    --         end
+    --     }
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use "lukas-reineke/indent-blankline.nvim"
 end)
