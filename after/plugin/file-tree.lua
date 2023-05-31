@@ -7,6 +7,7 @@ require("neo-tree").setup({
     filesystem = {
         hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
     },
+    follow_current_file = true,
     default_component_configs = {
         container = {
             enable_character_fade = true
