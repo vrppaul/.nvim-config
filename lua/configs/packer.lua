@@ -77,4 +77,13 @@ return require('packer').startup(function(use)
             require("monokai-pro").setup()
         end
     }
+
+    use('github/copilot.vim')
+
+    use {
+        "nvim-telescope/telescope-frecency.nvim",
+        config = function()
+            require("telescope").load_extension "frecency"
+        end,
+    }
 end)

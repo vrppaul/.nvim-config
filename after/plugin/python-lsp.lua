@@ -20,7 +20,8 @@ require 'lspconfig'.pylsp.setup {
                     enabled = true
                 },
                 ruff = {
-                    enabled = true
+                    enabled = true,
+                    lineLength = 120,
                 },
             }
         }
