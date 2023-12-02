@@ -86,4 +86,6 @@ return require('packer').startup(function(use)
             require("telescope").load_extension "frecency"
         end,
     }
+
+    use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
 end)
