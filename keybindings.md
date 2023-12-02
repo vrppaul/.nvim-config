@@ -45,4 +45,6 @@
 - `~` - Toggle case
 - `[[` - Previous context
 - `]]` - Next context
+- `T` - Write terminal command in command prompt
+- `<leader>tm` - Open tmux window split vertically
 
