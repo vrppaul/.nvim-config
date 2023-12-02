@@ -15,3 +15,6 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
 
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
+
+vim.keymap.set("n", "<leader>tm", "<CMD>!tmux split-window -h -p 40<CR>")
+vim.keymap.set("n", "T", ":!")
