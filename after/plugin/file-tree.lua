@@ -1,7 +1,8 @@
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
-vim.keymap.set("n", "<leader>ft", vim.cmd.NeoTreeRevealToggle)
+vim.keymap.set("n", "<leader>ft", vim.cmd.Neotree)
+vim.keymap.set("n", "<leader>fg", "<CMD>Neotree git_status<CR>")
 
 require("neo-tree").setup({
     filesystem = {
