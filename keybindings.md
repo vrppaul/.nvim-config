@@ -26,6 +26,12 @@
     - p     jump to patch or blob in preview window
     - `-`   eeblame at commit
 
+### In status view
+
+- `s` - Stage hunks under the cursor
+- `cc` - Commit
+- `<leader>gp` - Push the commit
+
 
 ## Harpoon
 
@@ -33,4 +39,10 @@
 - `<C-l>` -Previous saved file
 
 
-## 
+## Utils
+
+- `=` - Indent the code under the cursor
+- `~` - Toggle case
+- `[[` - Previous context
+- `]]` - Next context
+
