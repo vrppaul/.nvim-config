@@ -40,7 +40,7 @@ require('gitsigns').setup({
         enable = false
     },
 
-    on_attach                    = function(bufrnr)
+    on_attach                    = function(bufnr)
         local gs = package.loaded.gitsigns
 
         local function map(mode, l, r, opts)
