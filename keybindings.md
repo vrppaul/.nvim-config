@@ -48,6 +48,10 @@
 - `[x` — move to next conflict
 
 
+## Telescope
+- `<C-p>` - show files in GIT
+- `<leader>gf` - show stashes
+
 
 ## Utils
 
