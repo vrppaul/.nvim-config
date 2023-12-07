@@ -61,4 +61,6 @@
 - `]]` - Next context
 - `T` - Write terminal command in command prompt
 - `<leader>tm` - Open tmux window split vertically
+- `vey` OR `<leader>y` - yank word only
+- `vep` OR `<leader>p` - paste word instead of another word
 
