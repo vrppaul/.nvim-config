@@ -64,3 +64,6 @@
 - `vey` OR `<leader>y` - yank word only
 - `vep` OR `<leader>p` - paste word instead of another word
 
+## Frecency
+
+- `<leader><leader>` - Open list of the most recent files
