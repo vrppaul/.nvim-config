@@ -21,3 +21,6 @@ vim.keymap.set("n", "T", ":!")
 
 vim.keymap.set("n", "<leader>y", "vey")
 vim.keymap.set("n", "<leader>p", "vep")
+
+vim.keymap.set("n", "<leader>h", "<C-w>h")
+vim.keymap.set("n", "<leader>l", "<C-w>l")
