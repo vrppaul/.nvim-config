@@ -3,6 +3,7 @@
 - `<leader>ft` - Open file-tree, does not toggle
 - `<leader>FT` - Toggle file-tree
 - `<leader>fg` - Open git diff
+- `<leader>n` - Focus FileTree
 
 
 ## Gitsigns
@@ -63,6 +64,7 @@
 - `<leader>tm` - Open tmux window split vertically
 - `vey` OR `<leader>y` - yank word only
 - `vep` OR `<leader>p` - paste word instead of another word
+- `<F3>` - toggle maximize
 
 ## Frecency
 

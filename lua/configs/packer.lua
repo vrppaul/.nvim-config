@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('tpope/vim-rhubarb')
+    use('shumphrey/fugitive-gitlab.vim')
     use('f-person/git-blame.nvim')
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -90,4 +91,6 @@ return require('packer').startup(function(use)
     use { "ellisonleao/glow.nvim", config = function() require("glow").setup() end }
 
     use { 'akinsho/git-conflict.nvim', tag = "*" }
+
+    use { "sindrets/diffview.nvim" }
 end)

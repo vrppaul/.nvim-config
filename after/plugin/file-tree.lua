@@ -4,10 +4,18 @@ vim.opt.termguicolors = true
 vim.keymap.set("n", "<leader>FT", vim.cmd.NeoTreeRevealToggle)
 vim.keymap.set("n", "<leader>ft", vim.cmd.Neotree)
 vim.keymap.set("n", "<leader>fg", "<CMD>Neotree git_status<CR>")
+vim.keymap.set("n", "<leader>n", "<CMD>NeoTreeFocus<CR>")
 
 require("neo-tree").setup({
     filesystem = {
         hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
+        filtered_items = {
+            hide_dotfiles = false,
+            hide_gitignored = false,
+        },
+        follow_current_file = {
+            enabled = true,
+        },
     },
     follow_current_file = true,
     default_component_configs = {
@@ -54,4 +62,5 @@ require("neo-tree").setup({
             { source = "git_status", display_name = " 󰊢 Git " },
         },
     },
+
 })
